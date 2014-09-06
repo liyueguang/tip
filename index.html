@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />  
+		<style type="text/css">
+			li{
+				list-style:none;
+				border-color:#ccc;
+				line-height:24px;
+				padding:10px 30px;
+				font-family:Arial;
+				text-shadow:4px 4px 5px;
+				opacity:0.5;
+			}
+		</style>
+		
+		<script type="text/javascript"> 
+			function getNode()
+			{		
+				var nodeli =  document.getElementsByTagName("li");
+				for(var i in nodeli)
+				{
+					alert(i);
+					nodeli[i].onmouseover = function(){
+						this.style.backgroundColor = "#419cff";
+					}
+					nodeli[i].onmouseout= function(){
+						this.style.backgroundColor = "";
+					}
+					nodeli[i].onclick = function(){
+							var tt = this.innerText;
+							alert(tt);
+					}
+				}
+			}
+			
+			/*
+			function A()
+			{
+				if(this == window) {
+					var o = new Object();
+					o.cha = 'aa';
+					o.chb = 'bb';
+					return o;
+				}
+				else {
+					this.cha = "aa";
+					this.chb = "bb";
+					return this;
+				}
+			}
+			
+			var a = A();
+			alert(a);
+			alert(a.cha);
+			var b =  new A();
+			alert(b);
+			alert(b.cha);
+			*/
+		</script> 
+	</head>
+	<body onload="getNode();">
+			<ul>	
+				<li>
+					Page1
+				</li>
+				<li>
+					Page2
+				</li>
+				<li>
+					Page3
+				</li>
+				<li>
+					Page4
+				</li>
+				<li>
+					Page5
+				</li>
+				<li>
+					Page6
+				</li>
+			</ul>
+
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+	function getId()
+	{
+		var pid = document.getElementsByTagName("p");
+		for(var i=0; i<pid.length; i++)
+		{
+			pid[i].id = i;
+			pid[i].onclick = function(){
+				alert(this.id);
+			}
+		}
+		
+		//var body = document.getElementsByTagName("body")[0];
+		var body = document.body;
+		alert(body.innerHTML);
+	}
+</script>
+</head>
+<body onload="getId()">
+	<p>p1</p>
+	<p>p1</p>
+	<p>p1</p>
+	<p>p1</p>
+	<p>p1</p>
+</body>
+</html>

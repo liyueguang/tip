@@ -1,0 +1,53 @@
+<html>
+<head>
+	<script type="text/javascript">
+		/*
+		window.onload=function(){
+			document.onmouseup=function(event ){
+				var e = event?event:window.event;  //IE window.event  chrome/firefox  event
+				alert(e.button);
+				}
+		}
+		
+		// ------------------------------------------------------------------------------------------------------------------  
+		//让Person()和new Person() 有一样的效果
+		function Person(name, age){
+			if(this instanceof Person)
+			{
+				this.name = name;
+				this.age = age;
+				return this;
+			}
+			else
+			{
+				return new Person(name, age);
+			}
+		}
+		
+		alert(Person("Lee",30).name);
+		var p = new Person("Lee",30);
+		alert(p.name);
+		*/
+		
+		/*----------------------------------------------------------------------------------------------------------------------
+		//jsonp 例子  跨域通信
+		function getResult(result)
+		{
+			alert(result);
+		}
+		function start(){
+			var sc = document.createElement("script");
+			sc.src = "http://localhost:8080/action?name=Lee&callback=getResult";
+			var h = document.getElementsByTagName("head")[0];
+			h.appendChild(sc);
+		}
+		window.onload = function(){
+			start();
+		}
+		*/
+		
+	</script>
+</head>
+<body>
+</body>
+</html>

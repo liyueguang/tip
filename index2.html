@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<style type="text/css">
+		body{
+			padding:0px;
+			margin:0px;
+		}
+		
+		#div1{
+			position:relative;
+			width:500px;
+			height:500px;
+			background-color:green;
+		}
+
+		#div2 {
+			position:absolute;
+			max-width:300px;
+			max-height:300px;
+			background-color:blue;
+			word-break:break-all;
+		}
+
+		</style>
+		
+		<script type="text/javascript">
+			window.onload = function(){
+				var div1 = document.getElementById("div1");
+				var div2 = document.getElementById("div2");
+				div2.style.left = div1.clientWidth/2 - div2.clientWidth/2;
+				div2.style.top = div1.clientHeight/2 - div2.clientHeight/2;
+				document.onclick = get;
+			}
+			
+			function get(event)
+			{
+				var event = event || window.event;
+				alert(event.clientX+"   "+event.clientY);
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div id="div1">
+			111111111
+		</div>
+		<div id="div2">
+			333333333777777777777777777777777777777777777777777777777777
+		</div>
+	</body>
+</html>
